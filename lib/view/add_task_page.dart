@@ -25,7 +25,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
 
   void _updateButtonState() {
     final hasInput =
-        titleController.text.trim().isNotEmpty ||
+        titleController.text.trim().isNotEmpty &&
         descriptionController.text.trim().isNotEmpty;
     if (isButtonEnabled != hasInput) {
       setState(() {
@@ -70,6 +70,14 @@ class _AddTaskPageState extends State<AddTaskPage> {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.purple,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
                 onPressed:
                     isButtonEnabled
                         ? () {

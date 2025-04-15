@@ -1,16 +1,48 @@
-# task_manager_app
+## 🚀 Getting Started
 
-A new Flutter project.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/riyadmohammed/Task-Manager.giy
+   cd Task-Manager
 
-## Getting Started
+# Task Manager App
 
-This project is a starting point for a Flutter application.
+A simple task management Flutter application that allows users to add, view, complete, and delete
+tasks.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Add new tasks with a title and description
+- Mark tasks as completed/uncompleted
+- Delete tasks
+- View all tasks in a list
+- State management using Provider
+- Clean and simple UI
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Architecture
+
+- **MVVM pattern** with:
+    - `Model`: Defines the task structure
+    - `View`: Displays tasks and handles user interaction
+    - `ViewModel`: Manages business logic and state
+
+## Folder Structure
+
+lib/
+├── models/
+│ └── task_model.dart
+├── services/
+│ └── task_service.dart
+├── viewmodel/
+│ └── task_viewmodel.dart
+├── views/
+│ ├── task_manager_page.dart
+│ └── add_task_page.dart
+├── main.dart
+
+## 📸 Screenshots
+
+![main_page.png](../../Desktop/main_page.png)
+![task_manager_options.png](../../Desktop/task_manager_options.png)
+![add_task.png](../../Desktop/add_task.png)
+![add.png](../../Desktop/add.png)

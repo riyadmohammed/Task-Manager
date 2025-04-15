@@ -15,21 +15,25 @@ class TaskManagerPage extends StatelessWidget {
       appBar: AppBar(title: Text("Task Manager")),
       body: RefreshIndicator(
         onRefresh: taskVM.fetchTasks,
-        child: taskVM.isLoading
-            ? Center(child: CircularProgressIndicator())
-            : ListView.builder(
-          itemCount: taskVM.tasks.length,
-          itemBuilder: (context, index) {
-            final task = taskVM.tasks[index];
-            return buildTaskItem(context, task, taskVM);
-          },
-        ),
+        child:
+            taskVM.isLoading
+                ? Center(child: CircularProgressIndicator())
+                : ListView.builder(
+                  itemCount: taskVM.tasks.length,
+                  itemBuilder: (context, index) {
+                    final task = taskVM.tasks[index];
+                    return buildTaskItem(context, task, taskVM);
+                  },
+                ),
       ),
     );
   }
 
-
-  Widget buildTaskItem(BuildContext context,TaskModel task, TaskViewModel taskVM) {
+  Widget buildTaskItem(
+    BuildContext context,
+    TaskModel task,
+    TaskViewModel taskVM,
+  ) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 6, horizontal: 12),
       padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
@@ -43,7 +47,6 @@ class TaskManagerPage extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-
           GestureDetector(
             onTap: () => taskVM.toggleComplete(task.id),
             child: Container(
@@ -57,21 +60,22 @@ class TaskManagerPage extends StatelessWidget {
                   width: 2,
                 ),
               ),
-              child: task.completed
-                  ? Icon(Icons.check, color: Colors.white, size: 16)
-                  : null,
+              child:
+                  task.completed
+                      ? Icon(Icons.check, color: Colors.white, size: 16)
+                      : null,
             ),
           ),
           const SizedBox(width: 12),
-
 
           Expanded(
             child: Text(
               task.title,
               style: TextStyle(
-                decoration: task.completed
-                    ? TextDecoration.lineThrough
-                    : TextDecoration.none,
+                decoration:
+                    task.completed
+                        ? TextDecoration.lineThrough
+                        : TextDecoration.none,
                 color: task.completed ? Colors.grey : Colors.black,
                 fontSize: 16,
                 fontWeight: FontWeight.w500,
@@ -94,22 +98,20 @@ class TaskManagerPage extends StatelessWidget {
                 );
               }
             },
-            itemBuilder: (BuildContext context) => [
-              PopupMenuItem<String>(
-                value: 'toggle',
-                child: Text(task.completed ? 'Unmark as Completed' : 'Mark as Completed'),
-              ),
-              PopupMenuItem<String>(
-                value: 'delete',
-                child: Text('Delete'),
-              ),
-              PopupMenuItem<String>(
-                value: 'add',
-                child: Text('Add Task'),
-              ),
-            ],
-          )
-
+            itemBuilder:
+                (BuildContext context) => [
+                  PopupMenuItem<String>(
+                    value: 'toggle',
+                    child: Text(
+                      task.completed
+                          ? 'Unmark as Completed'
+                          : 'Mark as Completed',
+                    ),
+                  ),
+                  PopupMenuItem<String>(value: 'delete', child: Text('Delete')),
+                  PopupMenuItem<String>(value: 'add', child: Text('Add Task')),
+                ],
+          ),
         ],
       ),
     );
