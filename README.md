@@ -42,7 +42,7 @@ lib/
 
 ## 📸 Screenshots
 
-![main_page.png](../../Desktop/main_page.png)
+![main_page.png](screenshots/main_page.png)
 ![task_manager_options.png](../../Desktop/task_manager_options.png)
 ![add_task.png](../../Desktop/add_task.png)
 ![add.png](../../Desktop/add.png)
