@@ -42,7 +42,14 @@ lib/
 
 ## 📸 Screenshots
 
-![main_page.png](screenshots/main_page.png)
-![task_manager_options.png](../../Desktop/task_manager_options.png)
-![add_task.png](../../Desktop/add_task.png)
-![add.png](../../Desktop/add.png)
+### Home Page
+![Main Page](screenshots/main_page.png)
+
+### Task Options
+![Add Task Page](screenshots/task_manager_options.png)
+
+### Add Task Page
+![Add Task Page](screenshots/add_task.png)
+
+### Add Task Page
+![Add Task Page](screenshots/add.png)
