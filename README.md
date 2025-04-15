@@ -44,16 +44,16 @@ lib/
 
 ### Main Page
 
-<img src="lib/screenshots/main_page.png" width="200" height="150"/>
+<img src="lib/screenshots/main_page.png" width="200" height="300"/>
 
 ### Task Options
 
-<img src="lib/screenshots/task_manager_options.png" width="200" height="150"/>
+<img src="lib/screenshots/task_manager_options.png" width="200" height="300"/>
 
 ### Add Task Page
 
-<img src="lib/screenshots/add_task.png" width="200" height="150"/>
+<img src="lib/screenshots/add_task.png" width="200" height="300"/>
 
 ### Add Task Page
 
-<img src="lib/screenshots/add.png" width="200" height="150"/>
+<img src="lib/screenshots/add.png" width="200" height="300"/>
