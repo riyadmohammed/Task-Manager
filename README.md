@@ -46,7 +46,7 @@ lib/
 ![Main Page](screenshots/main_page.png)
 
 ### Task Options
-![Add Task Page](screenshots/task_manager_options.png)
+![Task Options](screenshots/task_manager_options.png)
 
 ### Add Task Page
 ![Add Task Page](screenshots/add_task.png)
