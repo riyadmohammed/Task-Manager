@@ -26,20 +26,6 @@ tasks.
     - `View`: Displays tasks and handles user interaction
     - `ViewModel`: Manages business logic and state
 
-## Folder Structure
-
-lib/
-├── models/
-│ └── task_model.dart
-├── services/
-│ └── task_service.dart
-├── viewmodel/
-│ └── task_viewmodel.dart
-├── views/
-│ ├── task_manager_page.dart
-│ └── add_task_page.dart
-├── main.dart
-
 ## 📸 Screenshots
 
 ### Main Page
